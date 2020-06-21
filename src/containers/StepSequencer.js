@@ -52,7 +52,6 @@ class StepSequencer extends Component {
   componentDidMount() {
     this.getRows();
     this.makeSynthArr(0);
-    console.log(this.state.rows);
   }
 
   getRows() {
