@@ -16,7 +16,7 @@ class StepSequencer extends Component {
       synths: [new Tone.PolySynth(), new Tone.AMSynth(), new Tone.DuoSynth(), new Tone.FMSynth(), new Tone.MembraneSynth(), new Tone.MonoSynth(), new Tone.PluckSynth()],
       rows: document.body.querySelectorAll('div > div'),
       index: 0,
-      bpm: 90,
+      bpm: 120,
       swing: 0.0,
       gain: 1.0,
       currentNote: 'C3',
@@ -72,7 +72,7 @@ class StepSequencer extends Component {
       this.stopSynth();
       this.state.synthArr.forEach(synth => synth.connect(this.state.recDest));
       this.state.synthArr.forEach(synth => synth.toMaster());
-      const eventID = Tone.Transport.scheduleRepeat(this.repeat, '16n');
+      const eventID = Tone.Transport.scheduleRepeat(this.repeat, '8n');
       this.setState({eventID: eventID});
       Tone.Transport.start();
       this.setState({playing: true});
@@ -314,7 +314,7 @@ class StepSequencer extends Component {
                 <p>BPM</p>
               </div>
               <div className="slider-container">
-                <BPMSlider className="bpm-slider" updateBPM={this.updateBPM} />
+                <BPMSlider className="bpm-slider" updateBPM={this.updateBPM} bpm={this.state.bpm} />
               </div>
               <div className="slider-value">
                 <p>SWING</p>
