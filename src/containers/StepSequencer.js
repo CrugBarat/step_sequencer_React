@@ -337,7 +337,6 @@ class StepSequencer extends Component {
             </div>
             <div className="media-border">
               <div className="media-controls-container">
-                <p className="controls-title">CONTROLS</p>
                 <div className="main-control">
                   <button name="play" onClick={this.startSynth}></button>
                 </div>

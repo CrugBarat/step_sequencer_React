@@ -11,8 +11,8 @@
 
 input[type='checkbox'] {
     -webkit-appearance:none;
-    width:60px;
-    height:60px;
+    width: 40px;
+    height: 40px;
     background-color: white;
     border-radius:5px;
     border:2px solid black;
@@ -63,16 +63,16 @@ input[type='checkbox']:hover, button:hover, select:hover, .controls-container {
 .controls-container {
   display: inline-block;
   border: solid;
-  width: 600px;
+  width: 400px;
   background-color: black;
   padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .values-border {
   display: inline-block;
   border: solid 1px white;
-  width: 450px;
+  width: 300px;
   padding: 20px;
   margin: 20px;
 }
@@ -81,7 +81,7 @@ input[type='checkbox']:hover, button:hover, select:hover, .controls-container {
   background-color: #98F9A8;
   font-family: 'digital';
   color: black;
-  width: 450px;
+  width: 300px;
   overflow: auto;
 }
 
@@ -91,9 +91,9 @@ h3, p {
 }
 
 .values {
-  width: 90px;
+  width: 60px;
   float: left;
-  font-size: 65px;
+  font-size: 45px;
 }
 
 .units {
@@ -102,7 +102,7 @@ h3, p {
 
 .media-border {
   border: solid 1px white;
-  width: 120px;
+  width: 90px;
   float: left;
   margin-right: 20px;
 }
@@ -113,19 +113,15 @@ h3, p {
   overflow: auto;
 }
 
-.controls-title {
-  margin-bottom: 5px;
-}
-
 .main-control {
   margin: 10px 0px 10px 10px;
-  width: 55px;
+  width: 40px;
   float: left;
 }
 
 button[name="play"] {
   border-style: solid;
-  border-width: 20px 0 20px 40px;
+  border-width: 18px 0 18px 36px;
   border-color: transparent transparent transparent #E830CE;
 }
 
@@ -143,13 +139,13 @@ button[name="play"]:focus {
 
 .sub-controls {
   float: left;
-  width: 30px;
+  width: 20px;
 }
 
 button[name="record"] {
   border: solid #1be7ff;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: #1be7ff;
   margin: 5px 0px 5px 0px;
@@ -170,8 +166,8 @@ button[name="record"]:focus {
 
 button[name="stop"] {
   border: solid #9201ff;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   background-color: #9201ff
 }
 
@@ -183,9 +179,10 @@ button[name="stop"]:focus {
 
 .sliders-container {
   border: solid 1px white;
-  width: 375px;
+  width: 250px;
   float: left;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .slider-value {
@@ -196,11 +193,11 @@ button[name="stop"]:focus {
 }
 
 .slider-container {
-  width: 290px;
+  width: 170px;
   float: left;
   margin-top: 5px;
-  margin-bottom: 10px;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 input[type=range] {
@@ -263,12 +260,13 @@ button {
 
 .oct-container {
   float: left;
-  font-size: 24px;
+  font-size: 16px;
   margin-left: 5px;
+  margin-top: 5px;
 }
 
 .oct-increase-button, .oct-decrease-button {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .oct-decrease-button:focus {
