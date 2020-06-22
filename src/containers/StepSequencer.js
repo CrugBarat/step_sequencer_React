@@ -72,7 +72,7 @@ class StepSequencer extends Component {
       this.stopSynth();
       this.state.synthArr.forEach(synth => synth.connect(this.state.recDest));
       this.state.synthArr.forEach(synth => synth.toMaster());
-      const eventID = Tone.Transport.scheduleRepeat(this.repeat, '8n');
+      const eventID = Tone.Transport.scheduleRepeat(this.repeat, '16n');
       this.setState({eventID: eventID});
       Tone.Transport.start();
       this.setState({playing: true});
@@ -99,6 +99,8 @@ class StepSequencer extends Component {
       let synth = this.state.synthArr[i];
       let note = this.state.notes[i];
       let row = this.state.rows[i];
+      console.log(row);
+      console.log(step);
       let input = row.querySelector(`input:nth-child(${step + 1})`);
       if (input.checked) synth.triggerAttackRelease(note, '8n');
     }

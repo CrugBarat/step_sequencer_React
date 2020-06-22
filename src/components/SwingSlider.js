@@ -1,5 +1,4 @@
 import React from 'react';
-import './Slider.css';
 
 const SwingSlider = (props) => {
 

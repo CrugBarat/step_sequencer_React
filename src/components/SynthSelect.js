@@ -1,4 +1,5 @@
 import React from 'react';
+import './Component.css';
 
 const SynthSelect = (props) => {
   const options = props.synthChoices.map((synth, index) => {
